@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
    lateinit var sharedPref:SharedPreferences
     var ageFromPref : Int?  = null // Integer değer yok ise null
    
-    var nameFromPref   : String? = null
+    var nameFromPref   : String? = null // String değer yok ise null
     var countryFromPref : String? = null
 
 
