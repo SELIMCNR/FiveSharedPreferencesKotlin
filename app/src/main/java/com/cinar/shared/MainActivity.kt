@@ -10,7 +10,8 @@ class MainActivity : AppCompatActivity() {
 
    private lateinit var binding: ActivityMainBinding
    lateinit var sharedPref:SharedPreferences
-    var ageFromPref : Int?  = null
+    var ageFromPref : Int?  = null // Integer değer yok ise null
+   
     var nameFromPref   : String? = null
     var countryFromPref : String? = null
 
