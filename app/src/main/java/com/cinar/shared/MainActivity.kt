@@ -30,8 +30,10 @@ class MainActivity : AppCompatActivity() {
         nameFromPref = sharedPref.getString("name", "")
         countryFromPref = sharedPref.getString("country", "")
         if (ageFromPref == -1 && nameFromPref == "" && countryFromPref == "") {
+           //kayıt olmadıysa bu değer
             binding.resultText.text = "Your : "
         } else {
+               // kayıt olduysa age değeri
             binding.resultText.text =
                 "Your name : ${nameFromPref}    your age : ${ageFromPref}    your country:${countryFromPref}"
 
@@ -67,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         nameFromPref = sharedPref.getString("name","")
         countryFromPref = sharedPref.getString("country","")
         if (ageFromPref != -1 && nameFromPref !="" && countryFromPref != ""){
+             // kayıtlı değer var ise sil
             sharedPref.edit().remove("age").apply()
             sharedPref.edit().remove("name").apply()
             sharedPref.edit().remove("country").apply()
